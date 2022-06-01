@@ -1,0 +1,39 @@
+= vim-iced-stdout-debugger
+
+https://github.com/liquidz/vim-iced[vim-iced] debugging plugin for just outputing results to Stdout buffer.
+
+image:https://img.shields.io/badge/iced-plugin-blue.svg?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiCiAgICAgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiCiAgICAgdmlld0JveD0iMTAsMTAsODAsODAiPgogIDxwb2x5Z29uIGZpbGw9IiNCM0U1RkMiIHBvaW50cz0iNTAsMTAgMTAsNTAgMzAsNzAgMjAsNTAiLz4KICA8cG9seWdvbiBmaWxsPSIjOTBDQUY5IiBwb2ludHM9IjUwLDEwIDMwLDUwIDMwLDcwIDU1LDUwIi8+CiAgPHBvbHlnb24gZmlsbD0iIzgxRDRGQSIgcG9pbnRzPSI1MCwxMCA3MCw3MCA5MCw1MCIvPgogIDxwb2x5Z29uIGZpbGw9IiM2NEI1RjYiIHBvaW50cz0iNjAsNjAgMzAsNzAgNTAsOTAgNzAsNzAiLz4KPC9zdmc+Cg==["vim-iced plugin", link="https://github.com/liquidz/vim-iced"]
+
+== Usage
+
+Execute `:IcedToggleStdoutDebugger` to toggle vim-iced's debugger.
+To launch debugger, please see the following document.
+https://liquidz.github.io/vim-iced/#debugging
+
+If you'd like to use vim-iced-stdout-debugger always, please set `"stdout"` to `g:iced#debug#debugger`.
+[source,vim]
+----
+let g:iced#debug#debugger = 'stdout'
+----
+
+== Requirements
+
+* https://github.com/liquidz/vim-iced[vim-iced] (`2.5.0` or later)
+
+== Installation
+
+=== vim-plug
+
+[source,vim]
+----
+Plug 'liquidz/vim-iced', {'for': 'clojure'}
+Plug 'liquidz/vim-iced-stdout-debugger', {'for': 'clojure'}
+----
+
+Execute `:PlugInstall` to install above plugins.
+
+== License
+
+Copyright (c) 2022 http://twitter.com/uochan[Masashi Iizuka].
+
+Distributed under the MIT License.
